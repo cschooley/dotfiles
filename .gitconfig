@@ -3,3 +3,5 @@
 	email = chris@schooley.name
 [core]
 	editor = vim
+[merge]
+	tool = vimdiff3
