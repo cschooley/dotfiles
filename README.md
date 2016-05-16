@@ -1,6 +1,8 @@
 # dotfiles
 Dotfiles
 
-Reboot of dotfiles to leverage GNU stow:
+Dotfile repository. Deployment and per-host conditionals handled by [yadm](https://github.com/TheLocehiliosan/yadm).
 
-http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
+Bootstrap New Host:
+
+`curl -fLo ~/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && chmod a+x ~/bin/yadm`
