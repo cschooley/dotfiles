@@ -331,13 +331,14 @@ URxvt*print-pipe:                       cat > $HOME/$(echo urxvt.dump.$(date +'%
 ! URxvt*remote-clipboard.fetch:         string
 ! URxvt*remote-clipboard.store:         string
 
-!old clipboard plugin
-!URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+!urxvt dynamic colors
+URxvt.dynamicColors: on
+
+!clipboard plugin
 URxvt.iso14755: False
-!URxvt.perl-ext-common: default,clipboard
-
-
-URxvt.perl-ext-common: default,clipboard
+URxvt.perl-ext-common: default,clipboard,urxvt-colors
 URxvt.keysym.Shift-Control-C: perl:clipboard:copy
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.keysym.Alt_L-C-v: perl:clipboard:paste_escaped
+urxvt.keysym.Shift-Control-H: perl:urxvt-colors:
+urxvt.keysym.F12: perl:urxvt-colors:

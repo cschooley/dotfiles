@@ -1,0 +1,6 @@
+[submodule ".dynamic-colors"]
+	path = .dynamic-colors
+	url = git@github.com:sos4nt/dynamic-colors.git
+[submodule ".urxvt/dynamic-colors"]
+	path = .urxvt/dynamic-colors
+	url = https://github.com/sos4nt/dynamic-colors

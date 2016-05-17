@@ -21,9 +21,16 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# path customizations
+export PATH="$HOME/.urxvt/dynamic-colors/bin:$PATH"
+
+#dynamic colors
+dynamic-colors init
+
 # urxvt title
 case $TERM in
         screen-256color)
             trap 'echo -ne "\e]0;$USER@$HOSTNAME ${PWD/$HOME/\~} \$ $BASH_COMMAND\007"' DEBUG
          ;;
     esac
+
